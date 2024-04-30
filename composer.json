@@ -1,0 +1,16 @@
+{
+    "name": "psu-libraries/get_the_out",
+    "description": "Get The Out: A Drupal module to make \"the\" disappear.",
+    "type": "drupal-module",
+    "authors": [
+        {
+            "name": "Xiaoyu Sun",
+            "email": "xqs100@psu.edu"
+        },
+        {
+            "name": "Mike Henninger",
+            "email": "msh6004@psu.edu"
+        }
+    ],
+    "license": "GPL-2.0-or-later",
+}
