@@ -1,0 +1,5 @@
+name: 'Get The Out'
+type: module
+description: 'A little bit a code to make the disappear'
+package: PSU Libraries
+core_version_requirement: ^10 || ^11

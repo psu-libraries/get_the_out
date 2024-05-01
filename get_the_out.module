@@ -1,0 +1,31 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Get The Out module.
+ */
+
+/**
+ * Implements hook_views_data_alter().
+ */
+function get_the_out_views_data_alter(&$data) {
+  if (isset($data['node'])) {
+    $data['node']['strip_out_the'] = [
+      'title' => t('Strip out the'),
+      'realField' => 'title',
+      'field' => [
+        'help' => t('Strip out those pesky thes'),
+        'id' => 'strip_out_the',
+      ],
+    ];
+    $data['node_field_data']['strip_out_the_sort'] = [
+      'title' => t('Strip Out The Sort'),
+      'group' => t('Content'),
+      'help' => t('Sort by Title with "The" stripped out'),
+      'sort' => [
+        'field' => 'title',
+        'id' => 'strip_out_the_sort',
+      ],
+    ];
+  }
+}
